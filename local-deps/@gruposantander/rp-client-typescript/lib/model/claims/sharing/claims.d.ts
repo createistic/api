@@ -1,0 +1,33 @@
+import { Claim } from './claim';
+export declare class Claims {
+    private readonly _claims;
+    readonly claims: Claim[];
+    phoneNumber(): Claim;
+    email(): Claim;
+    familyName(): Claim;
+    givenName(): Claim;
+    birthdate(): Claim;
+    age(): Claim;
+    totalBalance(): Claim;
+    address(): Claim;
+    gender(): Claim;
+    countryOfBirth(): Claim;
+    title(): Claim;
+    nationality(): Claim;
+    civilStatus(): Claim;
+    companyRegisteredName(): Claim;
+    companyTradeName(): Claim;
+    companyStartDate(): Claim;
+    companyEndDate(): Claim;
+    companyType(): Claim;
+    companyCountryIncorporation(): Claim;
+    companyAge(): Claim;
+    companyOperating(): Claim;
+    lastYearMoneyIn(): Claim;
+    lastQuarterMoneyIn(): Claim;
+    averageMonthlyMoneyIn(): Claim;
+    passportId(): Claim;
+    drivingLicenseId(): Claim;
+    nationalCardId(): Claim;
+    private addClaim;
+}

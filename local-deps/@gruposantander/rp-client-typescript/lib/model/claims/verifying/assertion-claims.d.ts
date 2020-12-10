@@ -1,0 +1,38 @@
+import { AssertionClaim } from './assertion-claim';
+import { AssertionClaimComparator } from './assertion-claim-comparator';
+import { AssertionClaimComplex } from './assertion-claim-complex';
+import { AssertionClaimSimple } from './assertion-claim-simple';
+export declare class AssertionClaims {
+    private readonly _claims;
+    readonly claims: AssertionClaim[];
+    email(): AssertionClaimSimple<string>;
+    phoneNumber(): AssertionClaimSimple<string>;
+    familyName(): AssertionClaimSimple<string>;
+    givenName(): AssertionClaimSimple<string>;
+    age(): AssertionClaimComparator<number>;
+    gender(): AssertionClaimSimple<string>;
+    countryOfBirth(): AssertionClaimSimple<string>;
+    title(): AssertionClaimSimple<string>;
+    nationality(): AssertionClaimSimple<string>;
+    civilStatus(): AssertionClaimSimple<string>;
+    companyRegisteredName(): AssertionClaimSimple<string>;
+    companyTradeName(): AssertionClaimSimple<string>;
+    companyStartDate(): AssertionClaimComparator<Date>;
+    companyEndDate(): AssertionClaimComparator<Date>;
+    companyType(): AssertionClaimSimple<string>;
+    companyCountryIncorporation(): AssertionClaimSimple<string>;
+    companyAge(): AssertionClaimComparator<number>;
+    companyOperating(): AssertionClaimSimple<boolean>;
+    birthdate(): AssertionClaimComparator<Date>;
+    totalBalance(): AssertionClaimComplex;
+    address(): AssertionClaimComplex;
+    lastYearMoneyIn(): AssertionClaimComplex;
+    lastQuarterMoneyIn(): AssertionClaimComplex;
+    averageMonthlyMoneyIn(): AssertionClaimComplex;
+    passportId(): AssertionClaimSimple<string>;
+    drivingLicenseId(): AssertionClaimSimple<string>;
+    nationalCardId(): AssertionClaimSimple<string>;
+    private addAssertionClaimSimple;
+    private addAssertionClaimComparator;
+    private addAssertionClaimComplex;
+}
